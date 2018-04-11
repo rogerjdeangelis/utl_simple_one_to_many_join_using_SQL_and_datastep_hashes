@@ -5,6 +5,9 @@ Simple one to many join using SQL and datastep hash
   1. Datastep HASH - same results in WPS and SAS
   2. SQL HASH (WPS Does not support the MAGIC option but does support
                the _method and WPS did use the HASH)
+               
+This is a special case with the smaller unique key table loaded into the hash table, also because the many table is sorted on the       
+keys. Usually the larger table is loaded into the hash.                    
 
 Not as obvious as you think? One to Many and Many to Many can produce unwanted results
 if you are not careful.
